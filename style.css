@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* General styling */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -7,10 +16,6 @@
     margin: 0;
 }
 
-body {
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-  
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -26,4 +31,62 @@ p, h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
+}
+
+/* layout */
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    height: 100vh;
+    display: flex;
+}
+
+#logo-section {
+    flex: 0 1 35%;
+    background: 
+        center /
+        cover
+        url('media/background-image.jpg') 
+        no-repeat
+        border-box
+        border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-credit {
+    width: 100%;
+    padding: 16px;
+    color: rgb(226, 218, 218);
+    background-color: rgba(10, 10, 10, 0.3);
+    text-align: center;
+}
+
+.image-credit > a,
+.image-credit > a:visited {
+    color: rgb(226, 218, 218);
+}
+
+.logo {
+    margin-top: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(10, 10, 10, 0.5);
+    color: white;
+    padding: 0.5rem;
+    font-size: clamp(1rem, 0.75rem + 3vw, 8rem);
+}
+
+.logo > h1 {
+    font-family: 'norsebold';
+}
+
+.logo > img {
+    width: clamp(1.2rem, 3rem + 3vw, 15rem);
+    height: auto;
 }
