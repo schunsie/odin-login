@@ -147,6 +147,8 @@ form {
     border: solid rgba(31, 31, 31, 0.3) 1px;
     background: rgba(243, 243, 243, 0.13);
     outline: none;
+
+    padding-left: 1rem;
 }
 
 input[type="text"]:focus {
@@ -174,5 +176,18 @@ form .btn {
     a:visited {
         color:rgb(27, 77, 27);
         text-decoration: none;
+    }
+}
+
+.error {
+    opacity: 0;
+    color: rgb(206, 1, 1);
+}
+
+input[type='password']:invalid {
+    border-color: rgb(206, 1, 1);
+
+    + .error {
+        opacity: 1;
     }
 }
