@@ -75,3 +75,80 @@ body {
         color: rgb(230, 230, 230)
     }
 }
+
+#form-col {
+    flex: 0 1 65%;
+    background: rgb(241, 241, 241);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#form-col > p:not(.login-link) {
+    font-weight: 600;
+    font-size: 1.5rem;
+    max-inline-size: 70ch;
+}
+
+#form-col > *:not(form),
+form > *:not(button) {
+    padding: 0 5%;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+.form-wrapper {
+    background: white;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.3)
+}
+
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    row-gap: 1rem;
+    max-width: 700px;
+    margin-top: 1.5rem;
+}
+
+.form-input > label {
+    display: block;
+    
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: rgb(48, 48, 48);
+}
+
+.form-input {
+    flex: 1 1 33%;
+}
+
+.form-input > input {
+    width: 100%;
+    min-width: 10rem;
+    height: 2.2rem;
+    border-radius: 0.3em;
+    border: solid rgba(31, 31, 31, 0.3) 1px;
+    background: rgba(243, 243, 243, 0.13);
+}
+
+form .btn {
+    margin: 2rem 0 0 5% ;
+    padding: 0.7rem 3rem;
+    border-radius: 0.5rem;
+    
+    color: white;
+    font-weight: bold;
+    background: rgb(27, 77, 27);
+    border: none;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.30);
+}
