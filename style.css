@@ -148,7 +148,7 @@ form {
     background: rgba(243, 243, 243, 0.13);
     outline: none;
 
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 
 input[type="text"]:focus {
@@ -182,6 +182,7 @@ form .btn {
 .error {
     opacity: 0;
     color: rgb(206, 1, 1);
+    font-size: 0.9rem;
 }
 
 input[type='password']:invalid {
